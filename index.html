@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-key="29,01,22">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Concy - the Concy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- Page Contents -->
+<div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui text container">
+    <h1 class="ui inverted header">
+      Olá, Concy!
+    </h1>
+    <h2>Bem vinda ao enigma do ano.</h2>
+    <div class="ui huge pink button">
+      <i class="hashtag icon"></i>
+      <i class="birthday cake icon"></i>
+    </div>
+  </div>
+
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable grid container">
+    <div class="row">
+      <div class="ten wide column">
+        <h3 class="ui header">Tenho uma mensagem pra você</h3>
+        <p>
+          Não vou lhe entregar de bandeija, faça por merecer.
+          Isso aqui é um jogo, bem interessante por sinal.
+          Descubra a chave criptografada para ter acesso à sua mensagem.
+          <br>
+          Lembre-se que será necessário fazer uso dos seus conhecimentos bíblicos.
+          Sim! Bíblicos. Eu lhe disse pra ler a Bíblia. Não me culpe por ser pagã.
+          <br><br>
+          Esse jogo será auto destruído após o fim do seu aniversário.
+        </p>
+      </div>
+      <div class="four wide right floated column">
+        <div class="ui image">
+          <img src="img2.jpg" alt="Imagem 2" class="grayscale">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ui vertical stripe quote segment">
+  <div class="ui equal width stackable internally celled grid">
+    <div class="center aligned row">
+      <div class="column">
+        <h3>"Número binário"</h3>
+        <p>Quando encontrar os números, converta-os para binário.</p>
+      </div>
+      <div class="column">
+        <h3>"Link de acesso"</h3>
+        <p>Quando conseguir, você terá acesso ao link para ler a mensagem.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical stripe inverted segment">
+  <div class="ui text container">
+    <h3 class="ui header inverted">Vamos de dicas?</h3>
+    <p>
+      Não se desespere! Nem se ache burra ou incapaz 
+      (note que aqui antecipo sua reação, uma vez que você é exatamente assim).
+    </p>
+    <p>
+      A chave decimal é composta por 3 números de dois dígitos. 
+      Você deve convertê-los individualmente para números binários.
+      Por fim, concatene os números binários em sequência.
+    </p>
+    <p><b>Ex: 19, 05, 14</b></p>
+    
+    <pre>
+      <code>
+        19 => 10011
+        05 => 101
+        14 => 1110
+      </code>
+    </pre>
+
+    <p>O código será <b>100111011110</b>.</p>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui text container">
+    <h3 class="ui header">Por onde começar?</h3>
+    <p>
+      É aqui que a coisa fica legal. Tenho três dicas importantes.
+      Cada uma delas vai te levar a uma pessoa diferente. Sim! uma pessoa.
+      Essa pessoa possui a dica que vai te levar a um dos três números decimais.
+      <br>
+      Atenção! Se errar a sequência, erra a chave também. 
+      Descobrir a sequência correta faz parte do jogo.
+    </p>
+  </div>
+</div>
+
+<div class="ui vertical stripe quote inverted segment">
+  <div class="ui equal width stackable internally celled grid">
+    <div class="center aligned row">
+      <div class="column">
+        <h3>Dica 1</h3>
+        <div class="ui divided inverted list">
+          <div class="item">Primeiro livro da Bíblia;</div>
+          <div class="item">Jardim murado onde Jesus orou antes de ser preso e crucificado;</div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>Dica 2</h3>
+        <div class="ui divided inverted list">
+          <div class="item">
+            Cidade de Canaã, que enganou Josué e propôs um acordo de defesa. 
+            Quando foram atacados, Israel os defendeu. Durante a batalha, 
+            Josué ordenou a Deus que parasse o Sol no meio do céu;
+          </div>
+          <div class="item">
+            Lugar em que o povo de Israel acampou pela primeira vez
+            depois de atravessar o Rio Jordão;
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>Dica 3</h3>
+        <div class="ui divided inverted list">
+          <div class="item"a>Discípulo que traiu Jesus;</div>
+          <div class="item">Quarto filho de Jacó;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui text container">
+    <h3 class="ui header">Agora é com você</h3>
+    <p>Qual o chave para acessar a mensagem?</p>
+
+    <form id="form" class="ui form">
+      <div class="ui fluid action input">
+        <input id="inputKey" type="number" required placeholder="Insira a chave..">
+        <button type="submit" class="ui button">
+          Testar
+        </button>
+      </div>
+    </form>
+
+    <button class="ui fluid button pink huge" id="btn-see-message" type="button">
+      Ver mensagem
+    </button>
+  </div>
+</div>
+
+<footer class="ui inverted vertical footer segment">
+  <div class="ui container">
+    <div class="ui stackable inverted grid">
+      <div class="seven wide column">
+        <h4 class="ui inverted header">Alex Paiva</h4>
+        <p>Seu boy magia favorito <i class="pink heart icon"></i></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('form')
+  const btnSeeMessage = document.getElementById('btn-see-message')
+  const inputKey = document.getElementById('inputKey')
+
+  function getPrivateKey() {
+    const decimalsStr = document.getElementsByTagName("html")[0].dataset.key
+    const decimalsNum = decimalsStr.split(",")
+    const binaryNumbers = decimalsNum.map(item => parseInt(item).toString(2))
+    return binaryNumbers.join("")
+  }
+  
+  form.onsubmit = (e) => {
+    e.preventDefault()
+    if (getPrivateKey() == inputKey.value) {
+      btnSeeMessage.style.visibility = "visible"
+    }
+    else {
+      alert('Ops! Parece que você errou a chave')
+    }
+  }
+</script>
+
+</body>
+</html>
